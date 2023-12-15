@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:wght@700&display=swap");
+
+:root {
+  --bg-dark: #000;
+  --gold: #bdae82;
+  --white: #fff;
+  --main-font: "Merriweather";
+  --second-font: "Inter";
+}
+
+body {
+  color: var(--white);
+  font-family: var(--second-font);
+  width: 1440px;
+  background-color: var(--bg-dark);
+}
+
+li {
+  list-style: none;
+}
+
+.skills {
+}
+
+.bg {
+  background-image: url(img/bg.png);
+  height: 910px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.lang {
+  display: flex;
+  gap: 9px;
+}
+
+.hero {
+  width: 464px;
+  padding: 82px;
+}
+
+.but {
+  background-color: var(--gold);
+  width: 220px;
+  height: 55px;
+  border: 0px;
+}
+
+.skills {
+  display: flex;
+  width: 1440px;
+  height: 480px;
+  padding: 100px 20px 0px 20px;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+}
+.hh2 {
+  display: flex;
+  align-items: center;
+  align-items: end;
+  flex-direction: column;
+  width: 700px;
+  height: 0px;
+  color: #bdae82;
+  text-align: center;
+  font-family: "Merriweather";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+}
