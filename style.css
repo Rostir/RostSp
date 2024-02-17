@@ -1,25 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:wght@700&display=swap");
 
 :root {
-  --bg-dark: #000;
-  --gold: #bdae82;
   --white: #fff;
-  --main-font: "Merriweather";
-  --second-font: "Inter";
+  --bg-dark: #000000;
+  --gold: #b6a060;
+  --main-font: Merriweather;
+  --second-font: Inter;
 }
 
 body {
-  color: var(--white);
-  font-family: var(--second-font);
   width: 1440px;
-  background-color: var(--bg-dark);
+  font-family: "Inter", serif;
+  background: var(--bg-dark);
+  text-align: center;
+  font-size: 18px;
+  margin: 0 auto;
+  color: var(--white);
 }
 
 li {
   list-style: none;
 }
-
-.skills {
+header {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  font-size: 20px;
 }
 
 .bg {
@@ -27,30 +35,35 @@ li {
   height: 910px;
 }
 
-header {
-  display: flex;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.logo {
+  width: 50px;
   height: 50px;
-  padding: 20px;
+  fill: var(--white);
+}
+
+.logo:hover {
+  fill: var(--gold);
 }
 
 nav {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   gap: 30px;
 }
 
-.lang {
+.test {
   display: flex;
   gap: 9px;
 }
 
 .hero {
+  text-align: left;
+  margin: 195px 0 0 80px;
+}
+
+.text-hero {
   width: 464px;
-  padding: 82px;
+  line-height: 40px;
+  margin: 62px 0 40px;
 }
 
 .but {
@@ -60,26 +73,103 @@ nav {
   border: 0px;
 }
 
-.skills {
-  display: flex;
-  width: 1440px;
-  height: 480px;
-  padding: 100px 20px 0px 20px;
-  flex-direction: row;
-  align-items: center;
-  gap: 60px;
-}
-.hh2 {
-  display: flex;
-  align-items: center;
-  align-items: end;
-  flex-direction: column;
-  width: 700px;
-  height: 0px;
-  color: #bdae82;
-  text-align: center;
-  font-family: "Merriweather";
+h2 {
+  margin: 100px 0 60px;
+  color: gold;
+  font-family: var(--main-font);
   font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
+}
+h2::after,
+h2::before {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 274px;
+  background-color: var(--gold);
+  margin: 10px 20px;
+}
+
+.skills-items {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+.skills-item {
+  width: 320px;
+}
+
+.port {
+  margin-top: 100px;
+}
+
+.p-2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 5px;
+}
+
+.p-2 button {
+  background: #000;
+  width: 220px;
+  height: 50px;
+  color: var(--white);
+  border: 3px solid var(--gold);
+}
+
+.portf-i {
+  padding-top: 60px;
+}
+.imgV {
+  position: relative;
+}
+
+.videoS {
+  position: absolute;
+  top: 370%;
+  left: 92%;
+  transform: translate(-50%, -50%);
+}
+.pricei {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  font-family: "Inter", serif;
+}
+
+.package {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  text-align: center;
+  border: 2px solid var(--gold);
+  padding: 20px;
+  margin: 20px;
+  width: 400px;
+  height: 505px;
+  position: relative;
+  top: 240px;
+  left: 20px;
+}
+
+.color {
+  font-family: "Mearyweather", serif;
+  font-size: 35px;
+}
+
+.pricen {
+  color: var(--gold);
+  font-size: 24px;
+}
+
+.butp {
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  background-color: var(--gold);
+  width: 220px;
+  height: 55px;
+  border: 0px;
 }
